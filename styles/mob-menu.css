@@ -8,9 +8,13 @@
 .mobile-nav__burger {
     position: fixed;
     width: 33px;
-    height: 18px;
+    height: 20px;
+    background-color: var(--co-white);
+    border-top: 2px solid var(--co-white);
+    border-bottom: 2px solid var(--co-white);
     flex-shrink: 0;
     cursor: pointer;
+    z-index: 1111;
 }
 
 .mobile-nav__toggler {
@@ -19,7 +23,7 @@
 
 .mobile-nav__menu {
     position: fixed;
-    background-color: var(--co-white);
+    background-color: transparent;
     color: var(--co-green);
     translate: -120% 0;
     transition: translate .33s;
@@ -35,15 +39,16 @@
 .mobile-nav__link {
     display: block;
     font-size: 15px;
+    background-color: var(--co-white);
     padding: 10px 30px 10px 10px;
     margin: 2px 0;
     border: 1px solid var(--co-black);
 
 }
 
-.mobile-nav__link:hover {
+/* .mobile-nav__link:hover {
     color: var(--co-green);
-}
+} */
 
 @media (max-width: 768px) {
     .mobile-nav {
